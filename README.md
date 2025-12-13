@@ -15,17 +15,17 @@
     <li><a href="#accomplishments">Accomplishments</a></li>
     <li><a href="#challenges">Challenges</a></li>
     <li><a href="#final-project-videos">Final Project Videos</a></li>
+    <li><a href="#hardware">Hardware</a></li>
     <li><a href="#software">Software</a></li>
         <ul>
             <li><a href="#slam-simultaneous-localization-and-mapping">SLAM (Simultaneous Localization and Mapping)</a></li>
             <li><a href="#obstacle-avoidance">Obstacle Avoidance</a></li>
         </ul>
-    <li><a href="#hardware">Hardware</a></li>
     <li><a href="#gantt-chart">Gantt Chart</a></li>
     <li><a href="#course-deliverables">Course Deliverables</a></li>
     <li><a href="#project-reproduction">Project Reproduction</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
-    <li><a href="#contacts">Contacts</a></li>
+    <li><a href="#Ideas for future Teams">Ideas for future Teams</a></li>
   </ol>
 
 <hr>
@@ -69,4 +69,27 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 * Passing the encoder feedback to the jetson to publish in Ros2
 * Time
 * Hardware issues. The gears inside the steering motor assembly were stripped, but luckily the bed lifting motor had the same gears to replace them
+<hr>
+
+## Hardware
+
+> [!WARNING]
+> Charge the battery very regularly, there is no undervoltage protection!
+> It should always stay above 22.5V. If you want to check it, pull out one of the power cables in the 24V splitter in the front and use a multimeter
+
+# Electronics:
+* Nvidia Jetson Nano: Main controller
+* 2 Arduino Mega 2560:
+  * Controlling all the H-Bridges
+  * Reading feedback from 2 of the wheel encoders
+  * Reading the steering encoder
+* 2 Arduino nano: Reading the other two wheel encoders. Since the used encoders dont support changing their i2c adress, we can only put one per i2c bus, so one per arduino
+* 5 H-Bridges: Controlling the brushed motors (https://www.amazon.com/MTDELE-H-Bridge-semiconductor-Refrigeration-Controller/dp/B0D732VYGZ/ref=sims_dp_d_dex_popular_subs_t3_v6_d_sccl_1_4/136-0486074-4523801?psc=1)
+<hr>
+
+## Ideas for future Teams
+* Add a Battery sensor: The battery shouldnt drop below 22.5V and currently there is nothing warning you or stopping the car
+* Artificial differential: Compute the wheel angle and use that to compute how much faster the outer wheels in a turn need to spin
+* Wire all the existing car switches to the front arduino to make them usable in your code
+
 <hr>

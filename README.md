@@ -83,8 +83,13 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
   * Controlling all the H-Bridges
   * Reading feedback from 2 of the wheel encoders
   * Reading the steering encoder
-* 2 Arduino nano: Reading the other two wheel encoders. Since the used encoders dont support changing their i2c adress, we can only put one per i2c bus, so one per arduino
+* 2 Arduino micro pro: Reading the other two wheel encoders. Since the used encoders dont support changing their i2c adress, we can only put one per i2c bus, so one per arduino
 * 5 H-Bridges: Controlling the brushed motors (https://www.amazon.com/MTDELE-H-Bridge-semiconductor-Refrigeration-Controller/dp/B0D732VYGZ/ref=sims_dp_d_dex_popular_subs_t3_v6_d_sccl_1_4/136-0486074-4523801?psc=1)
+* 4 AS5600 Hall effect encoders: Reading the wheel motor rpm
+* Radio control:
+  * Radiomaster reciever: recieving commands from remote control
+  * Arduino micro pro: Converting it to a usb joystick for the jetson to read
+  * Relay board: When triggert it stops 5V enable signal to ALL H-Bridges, so nothing will move if this 5v signal is not switched.
 <hr>
 
 ## Ideas for future Teams

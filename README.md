@@ -16,6 +16,10 @@
     <li><a href="#challenges">Challenges</a></li>
     <li><a href="#final-project-videos">Final Project Videos</a></li>
     <li><a href="#hardware">Hardware</a></li>
+      <ul>
+            <li><a href="#electronics">Electronics</a></li>
+            <li><a href="#wiring">Wiring</a></li>
+        </ul>
     <li><a href="#software">Software</a></li>
         <ul>
             <li><a href="#slam-simultaneous-localization-and-mapping">SLAM (Simultaneous Localization and Mapping)</a></li>
@@ -93,7 +97,8 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
   * Radiomaster reciever: recieving commands from remote control
   * Arduino micro pro: Converting it to a usb joystick for the jetson to read
   * Relay board: When triggert it stops 5V enable signal to ALL H-Bridges, so nothing will move if this 5v signal is not switched.
- 
+
+ ### Wiring
 <div align="left">
     <img src="images\Robojeep wiring.png" width="800" height="600">
 </div>

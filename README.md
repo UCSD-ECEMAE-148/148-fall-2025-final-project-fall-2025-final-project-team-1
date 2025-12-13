@@ -77,6 +77,9 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 > Charge the battery very regularly, there is no undervoltage protection!
 > It should always stay above 22.5V. If you want to check it, pull out one of the power cables in the 24V splitter in the front and use a multimeter
 
+> [!IMPORTANT]
+> The Emergency stop is the Top right button on the remote, when the green light is on it is triggered. All H-Drives need a 5V enable signal to make the motors move at all. If nothing moves, probably the estop is trigerred disabling all of the 5V enable circuit. If the red led on the relay board is on it is triggered. If parts of the car wont move, probably the enable wire is broken or unplugged somewhere. All the enable wires are yellow.
+
 ### Electronics:
 * Nvidia Jetson Nano: Main controller
 * 2 Arduino Mega 2560:
@@ -90,6 +93,11 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
   * Radiomaster reciever: recieving commands from remote control
   * Arduino micro pro: Converting it to a usb joystick for the jetson to read
   * Relay board: When triggert it stops 5V enable signal to ALL H-Bridges, so nothing will move if this 5v signal is not switched.
+ 
+<div align="left">
+    <img src="images\Robojeep wiring.png" width="800" height="600">
+</div>
+
 <hr>
 
 ## Ideas for future Teams

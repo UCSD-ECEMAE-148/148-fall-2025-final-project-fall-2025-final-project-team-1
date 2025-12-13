@@ -77,7 +77,7 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 > Charge the battery very regularly, there is no undervoltage protection!
 > It should always stay above 22.5V. If you want to check it, pull out one of the power cables in the 24V splitter in the front and use a multimeter
 
-# Electronics:
+### Electronics:
 * Nvidia Jetson Nano: Main controller
 * 2 Arduino Mega 2560:
   * Controlling all the H-Bridges

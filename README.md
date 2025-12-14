@@ -106,6 +106,14 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 
 <hr>
 
+### Car Hardware
+We improved the steering play by printing a spacer to take up the void created by the manufacturing tolerances, this greatly improved our steering accuracy
+<div align="left">
+    <img src="images\Robojeep wiring.png" width="400" height="300">
+</div>
+
+If this car should be used to transport a large payload, the seats can be removed 
+
 ## Ideas for future Teams
 * Add a Battery sensor: The battery shouldnt drop below 22.5V and currently there is nothing warning you or stopping the car
 * Artificial differential: Compute the wheel angle and use that to compute how much faster the outer wheels in a turn need to spin

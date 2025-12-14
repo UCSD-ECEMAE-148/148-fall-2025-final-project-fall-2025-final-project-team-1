@@ -41,7 +41,7 @@ Jobanpreet Mutti  - MAE
 
 Saul Armenta - ECE
 
-Bastian Müllner - MAE - UPS student visiting from TUM
+Bastian Müllner - UPS student visiting from TUM
 <hr>
 
 ## Abstract

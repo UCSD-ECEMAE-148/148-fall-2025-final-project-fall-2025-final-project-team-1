@@ -112,7 +112,7 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 ### Car Hardware
 For mounting all of the electronics we 3D Printed custom brackets. All the CAD files are in [here](./CAD/).
 
-We also improved the steering play by printing a spacer to take up the void created by the manufacturing tolerances, this greatly improved our steering accuracy
+We also improved the steering play by printing a spacer to take up the void created by the manufacturing tolerances, this greatly improved our steering accuracy.
 <div align="left">
     <img src="images\Steering_Spacer.jpeg" width="400" height="300">
 </div>

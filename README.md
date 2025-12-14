@@ -188,7 +188,7 @@ build_robojeep
 launch_robojeep
 ```
 
-That's it! The vehicle is now ready for being controlled with the remote control.
+That's it! The vehicle is now ready for being controlled with the remote control. The left joystick controls steering and the right one throttle and skid steering.
 
 ---
 

@@ -157,7 +157,7 @@ docker exec -it test_container bash
 
 #### 3. Build and Launch
 
-Add these bash functions to your bashrc file
+Add these bash functions to your bashrc file (also already done on the installed Jetson)
 
 ```bash
 nano ~/.bashrc

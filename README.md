@@ -4,7 +4,7 @@
 #### <div align="center"> Team 1 Fall 2025 </div>
 
 <div align="center">
-    <img src="images\ucsdrobocar-148-07.webp" width="800" height="600">
+    <img src="images\full_car.jpeg" width="800" height="600">
 </div>
 
 ## Table of Contents
@@ -107,12 +107,15 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 <hr>
 
 ### Car Hardware
-We improved the steering play by printing a spacer to take up the void created by the manufacturing tolerances, this greatly improved our steering accuracy
+For mounting all of the electronics we 3D Printed custom brackets. All the CAD files are in [here](./CAD/).
+
+We also improved the steering play by printing a spacer to take up the void created by the manufacturing tolerances, this greatly improved our steering accuracy
 <div align="left">
-    <img src="images\Robojeep wiring.png" width="400" height="300">
+    <img src="images\Steering_Spacer.jpeg" width="400" height="300">
 </div>
 
-If this car should be used to transport a large payload, the seats can be removed 
+
+In case this car should be used to transport a large payload, removing the seats will provide a large cavity for that.
 
 ## Ideas for future Teams
 * Add a Battery sensor: The battery shouldnt drop below 22.5V and currently there is nothing warning you or stopping the car

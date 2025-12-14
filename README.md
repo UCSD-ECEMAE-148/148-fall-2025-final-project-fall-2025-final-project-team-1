@@ -19,16 +19,16 @@
             <li><a href="#electronics">Electronics</a></li>
             <li><a href="#wiring">Wiring</a></li>
             <li><a href="#car-hardware">Car Hardware</a></li>
+            <li><a href="#how-to-use">How to use</a></li>
         </ul>
    <li><a href="#software">Software</a></li>
         <ul>
-            <li><a href="#slam-simultaneous-localization-and-mapping">SLAM (Simultaneous Localization and Mapping)</a></li>
-            <li><a href="#obstacle-avoidance">Obstacle Avoidance</a></li>
+            <li><a href="#quick-start">Quick start guide</a></li>
+            <li><a href="#project-structure">Project structure</a></li>
         </ul>
-    <li><a href="#ideas-for-future-teams">Ideas for future Teams</a></li>
     <li><a href="#pictures">Pictures</a></li>
     <li><a href="#final-project-videos">Final Project Videos</a></li>
-    <li><a href="#operational-guide">Operational Guide</a></li>
+    <li><a href="#ideas-for-future-teams">Ideas for future Teams</a></li>
   </ol>
 
 <hr>
@@ -69,6 +69,7 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 <hr>
 
 ## Challenges
+* Reading the encoders fast enough to capture the motor rpm. After much optimization we got up to 9000 rpm, but not to the 13500rpm of the motor at full speed
 * Passing the encoder feedback to the jetson to publish in Ros2
 * Time
 * Hardware issues. The gears inside the steering motor assembly were stripped, but luckily the bed lifting motor had the same gears to replace them
@@ -83,7 +84,7 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 > [!IMPORTANT]
 > The Emergency stop is the Top right button on the remote, when the green light is on it is triggered. All H-Drives need a 5V enable signal to make the motors move at all. If nothing moves, probably the estop is trigerred disabling all of the 5V enable circuit. If the red led on the relay board is on it is triggered. If parts of the car wont move, probably the enable wire is broken or unplugged somewhere. All the enable wires are yellow.
 
-### Electronics:
+### Electronics
 * Nvidia Jetson Nano: Main controller
 * 2 Arduino Mega 2560:
   * Controlling all the H-Bridges
@@ -112,13 +113,17 @@ We also improved the steering play by printing a spacer to take up the void crea
 <div align="left">
     <img src="images\Steering_Spacer.jpeg" width="400" height="300">
 </div>
-
-
-
-## Final Project Videos
-https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3jxdj2R4j
 <hr>
 
+### How to use
+#### Charging:
+The car still uses the same battery and charger as before converting it to a robot. Just plug the charger that comes with it into the port on the right of the dash. For now the car automatically turns off when you plug it in, but you could rewire the charging port and power button so it doesnt
+
+#### Turning the car on
+The power button is the switch right next to the charging port. This is also the only button on the dash that does anything. The red power button on the left does nothing.
+<hr>
+
+## Software
 ### Quick Start
 
 #### 0. Pull Docker image
@@ -240,6 +245,12 @@ ros2 topic echo /wheel_cmd              # Wheel velocity commands
 ros2 topic echo /serial_status          # Formatted serial commands being sent
 ros2 topic echo /wheel_feedback         # Encoder feedback (not implemented but structure is there)
 ```
+## Pictures
+
+<hr>
+## Final Project Videos
+https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3jxdj2R4j
+<hr>
 
 ## Ideas for future Teams
 * Add a Battery sensor: The battery shouldnt drop below 22.5V and currently there is nothing warning you or stopping the car
@@ -247,4 +258,3 @@ ros2 topic echo /wheel_feedback         # Encoder feedback (not implemented but 
 * Wire all the existing car dash and steering wheel switches to the front arduino to make them usable in your code
 * In case this car should be used to transport a large payload, removing the seats will provide a large cavity for that.
 
-<hr>

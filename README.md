@@ -66,7 +66,7 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
   * Skid Steering
   * Forward and backward driving
 * Complete Hardware installation for encoders on all 4 wheel motors
-* Safe operation with seperate estop relay controlled dircly via the remote control bypassing the jetson nano
+* Safe operation with seperate estop relay controlled directly via the remote control bypassing the jetson nano
 <hr>
 
 ## Challenges

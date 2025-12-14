@@ -250,6 +250,7 @@ ros2 topic echo /wheel_feedback         # Encoder feedback (not implemented but 
 ```
 
 <hr>
+
 ## Pictures
 | Front electronics without battery | Rear electronics |
 |------------|-----------|

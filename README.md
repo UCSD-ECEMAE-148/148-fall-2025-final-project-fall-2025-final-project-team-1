@@ -98,7 +98,7 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 * Radio control:
   * Radiomaster reciever: recieving commands from remote control
   * Arduino micro pro: Converting it to a usb joystick for the jetson to read with [this](https://github.com/Triton-AI/ELRSController) software
-  * Relay board: When triggert it stops 5V enable signal to ALL H-Bridges, so nothing will move if this 5v signal is not switched.
+  * Relay board: When triggert it stops  the 5V enable signal to ALL H-Bridges, so nothing will move if this 5v signal is not providet.
 
  ### Wiring
 <div align="left">

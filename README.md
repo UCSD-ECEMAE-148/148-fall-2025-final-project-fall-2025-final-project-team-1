@@ -248,8 +248,15 @@ ros2 topic echo /serial_status          # Formatted serial commands being sent
 ros2 topic echo /wheel_feedback         # Encoder feedback (not implemented but structure is there)
 ```
 ## Pictures
+| Front electronics without battery | Rear electronics |
+|------------|-----------|
+| ![Front](images/Front.jpeg) | ![Back](images/Back.jpeg) |
+| Wheel encoder | Steering encoder |
+| ![Wheel encoder](images/Wheel.jpeg) | ![Top](images/Steering.jpeg) |
+
 
 <hr>
+
 ## Final Project Videos
 https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3jxdj2R4j
 <hr>

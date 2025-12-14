@@ -261,7 +261,7 @@ ros2 topic echo /wheel_feedback         # Encoder feedback (not implemented but 
 ## Final Project Videos
 
 [![Demo Video](https://img.youtube.com/vi/00laZGtpTdU/0.jpg)](https://www.youtube.com/watch?v=00laZGtpTdU)
-[![Demo Video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Demo Video](https://img.youtube.com/vi/U05uUSHNJ1E?si=mVZwBM6z9Pw19pEj/0.jpg)](https://www.youtube.com/watch?v=U05uUSHNJ1E?si=mVZwBM6z9Pw19pEj)
 
 https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3jxdj2R4j
 <hr>

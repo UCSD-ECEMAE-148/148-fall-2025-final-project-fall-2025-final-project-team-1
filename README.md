@@ -264,7 +264,6 @@ ros2 topic echo /wheel_feedback         # Encoder feedback (not implemented but 
 [![Demo Video](https://img.youtube.com/vi/00laZGtpTdU/0.jpg)](https://www.youtube.com/watch?v=00laZGtpTdU)
 
 
-https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3jxdj2R4j
 <hr>
 
 ## Ideas for future Teams

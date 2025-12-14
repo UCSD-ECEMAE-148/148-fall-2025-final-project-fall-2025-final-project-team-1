@@ -218,6 +218,6 @@ ros2 topic echo /wheel_cmd              # Wheel velocity commands
 **Debugging Topics:**
 ```bash
 ros2 topic echo /serial_status          # Formatted serial commands being sent
-ros2 topic echo /wheel_feedback         # Encoder feedback (if configured)
+ros2 topic echo /wheel_feedback         # Encoder feedback (not implemented but structure is there)
 ```
 

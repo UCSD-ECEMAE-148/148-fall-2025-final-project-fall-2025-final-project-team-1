@@ -129,7 +129,7 @@ The power button is the switch right next to the charging port. This is also the
 ## Software
 ### Quick Start
 
-#### 0. Pull Docker image
+#### 0. Pull Docker image (already done on the installed Jetson)
 ```bash
 docker pull djnighti/ucsd_robocar:devel
 ```

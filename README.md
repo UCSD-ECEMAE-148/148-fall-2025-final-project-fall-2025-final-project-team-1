@@ -123,7 +123,7 @@ We also improved the steering play by printing a spacer to take up the void crea
 The car still uses the same battery and charger as before converting it to a robot. Just plug the charger that comes with it into the port on the right of the dash. For now the car automatically turns off when you plug it in, but you could rewire the charging port and power button so it doesnt.
 
 #### Turning the car on:
-The power button is the switch right next to the charging port. This is also the only button on the dash that does anything. The red power button on the left does nothing.
+First turn on the transmitter, if it is not turned on when the car is turned on the reciever wont bind to the remote but go to its wifi mode for software updates. The power button of the car is the switch right next to the charging port. This is also the only button on the dash that does anything. The red power button on the left does nothing.
 <hr>
 
 ## Software
@@ -188,7 +188,7 @@ build_robojeep
 launch_robojeep
 ```
 
-That's it! The vehicle is now ready for teleoperation.
+That's it! The vehicle is now ready for being controlled with the remote control.
 
 ---
 

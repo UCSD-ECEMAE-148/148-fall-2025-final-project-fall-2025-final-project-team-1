@@ -189,3 +189,6 @@ robojeep_ws/
 - Launch files that start all nodes together
 - Configuration file (`config/robojeep.yaml`)
 
+
+## Final Project Videos
+https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3jxdj2R4j

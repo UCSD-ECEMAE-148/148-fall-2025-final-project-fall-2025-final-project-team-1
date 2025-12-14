@@ -165,8 +165,8 @@ robojeep_ws/
 │   ├── robojeep_base/          # Control logic and command generation
 │   ├── robojeep_arduino_bridge/ # Serial communication with Arduinos
 │   └── robojeep_bringup/       # Launch files and configuration
-└── config/
-    └── robojeep.yaml           # Main configuration file
+        └── config/
+            └── robojeep.yaml           # Main configuration file
 ```
 
 #### Package Descriptions

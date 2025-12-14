@@ -134,6 +134,7 @@ https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3
 ```bash
 docker pull djnighti/ucsd_robocar:devel
 ```
+Then add our project folder into the docker container
 
 https://hub.docker.com/r/djnighti/ucsd_robocar
 
@@ -157,7 +158,28 @@ docker exec -it test_container bash
 
 #### 3. Build and Launch
 
-From anywhere in the container (custom bash functions):
+Add these bash functions to your bashrc file
+
+```bash
+nano ~/.bashrc
+```
+
+```bash
+function build_robojeep() {
+    cd /home/projects/robojeep_ws
+    source /opt/ros/foxy/setup.bash
+    colcon build
+    source install/setup.bash
+}
+# RoboJeep launch function
+function launch_robojeep() {
+    source /opt/ros/foxy/setup.bash
+    source /home/projects/robojeep_ws/install/setup.bash
+    ros2 launch robojeep_bringup robojeep.launch.py
+}
+```
+
+Now from anywhere in the container (custom bash functions):
 
 ```bash
 # Build the workspace

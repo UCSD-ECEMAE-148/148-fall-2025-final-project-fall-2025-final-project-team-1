@@ -29,6 +29,7 @@
     <li><a href="#pictures">Pictures</a></li>
     <li><a href="#final-project-videos">Final Project Videos</a></li>
     <li><a href="#ideas-for-future-teams">Ideas for future Teams</a></li>
+    <li><a href="#contacts">Contacts</a></li>
   </ol>
 
 <hr>
@@ -258,6 +259,10 @@ ros2 topic echo /wheel_feedback         # Encoder feedback (not implemented but 
 <hr>
 
 ## Final Project Videos
+
+[![Demo Video](https://img.youtube.com/vi/00laZGtpTdU?si=VP4Jvsx1ltcIHVkx/0.jpg)](https://www.youtube.com/watch?v=00laZGtpTdU?si=VP4Jvsx1ltcIHVkx)
+[![Demo Video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
 https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3jxdj2R4j
 <hr>
 
@@ -267,3 +272,11 @@ https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3
 * Wire all the existing car dash and steering wheel switches to the front arduino to make them usable in your code
 * In case this car should be used to transport a large payload, removing the seats will provide a large cavity for that.
 
+<hr>
+
+## Contacts
+
+* Bastian Müllner - bastian.muellner@tum.de | [LinkedIn](https://www.linkedin.com/in/winston-wei-han-chou-a02214249/)
+* Anderson Compalas - 
+* Jobanpreet Mutti - 
+* Saul Armenta -

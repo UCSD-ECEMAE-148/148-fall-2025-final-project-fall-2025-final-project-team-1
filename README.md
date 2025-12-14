@@ -103,6 +103,7 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 <div align="left">
     <img src="images\Robojeep wiring.png" width="800" height="600">
 </div>
+Wiring diagram as a Smart Draw [file](./Wiring/)
 
 <hr>
 

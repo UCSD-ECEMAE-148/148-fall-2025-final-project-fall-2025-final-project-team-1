@@ -28,6 +28,7 @@
     <li><a href="#Ideas for future Teams">Ideas for future Teams</a></li>
     <li><a href="#pictures">Pictures</a></li>
     <li><a href="#final-project-videos">Final Project Videos</a></li>
+    <li><a href="#operational-guide">Operational Guide</a></li>
   </ol>
 
 <hr>
@@ -121,3 +122,70 @@ In case this car should be used to transport a large payload, removing the seats
 * Wire all the existing car dash and steering wheel switches to the front arduino to make them usable in your code
 
 <hr>
+
+## Operational Guide
+
+### Quick Start
+
+#### 1. SSH into Jetson
+
+```bash
+ssh -Y jetson@ucsdrobojeep-148-01.local
+```
+
+#### 2. Start Docker Container
+
+```bash
+docker start test_container
+docker exec -it test_container bash
+```
+
+#### 3. Build and Launch
+
+From anywhere in the container (custom bash functions):
+
+```bash
+# Build the workspace
+build_robojeep
+
+# Launch the system
+launch_robojeep
+```
+
+That's it! The vehicle is now ready for teleoperation.
+
+---
+
+### Project Structure
+
+```
+robojeep_ws/
+├── src/
+│   ├── robojeep_msgs/          # Custom ROS message definitions
+│   ├── robojeep_base/          # Control logic and command generation
+│   ├── robojeep_arduino_bridge/ # Serial communication with Arduinos
+│   └── robojeep_bringup/       # Launch files and configuration
+└── config/
+    └── robojeep.yaml           # Main configuration file
+```
+
+#### Package Descriptions
+
+**robojeep_msgs**
+- Defines custom message types for steering and wheel commands
+- Messages: `SteeringCommand`, `WheelCommand`, `WheelFeedback`
+
+**robojeep_base**
+- `base_node_differential.py`: Converts `/cmd_vel` to vehicle-specific commands
+- Implements both Ackermann and tank steering logic
+- Publishes `/wheel_cmd` and `/steering_cmd`
+
+**robojeep_arduino_bridge**
+- `bridge_node_calibrated.py`: Formats ROS commands into serial protocol
+- Handles serial communication with Arduino Megas
+- Publishes `/serial_status` for debugging
+
+**robojeep_bringup**
+- Launch files that start all nodes together
+- Configuration file (`config/robojeep.yaml`)
+

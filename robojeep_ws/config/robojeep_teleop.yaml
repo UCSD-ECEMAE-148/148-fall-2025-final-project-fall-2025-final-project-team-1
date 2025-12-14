@@ -1,0 +1,37 @@
+teleop_twist_joy:
+  ros__parameters:
+
+    # ---------------------------------------------------------
+    # DEADMAN (ENABLE) BUTTON
+    # ---------------------------------------------------------
+    require_enable_button: false
+    enable_button: 5          # e.g. RB
+    enable_turbo_button: 4    # e.g. LB (not used yet, but required)
+
+    # ---------------------------------------------------------
+    # LINEAR (THROTTLE)
+    # For now, throttle is effectively disabled by scale = 0.0.
+    # Later, you can increase scale_linear.x to allow forward motion.
+    # ---------------------------------------------------------
+    axis_linear:
+      x: 1                    # left stick vertical (typical)
+    scale_linear:
+      x: 0.0                  # <--- throttle OFF for now
+    scale_linear_turbo:
+      x: 0.0                  # can later be >0 for turbo mode
+
+    # ---------------------------------------------------------
+    # STEERING (ANGULAR.Z)
+    # ---------------------------------------------------------
+    axis_angular:
+      yaw: 0                  # left stick horizontal (typical)
+    scale_angular:
+      yaw: 0.9                # max steering angle (rad), matches base_node max
+    scale_angular_turbo:
+      yaw: 0.9
+
+    # ---------------------------------------------------------
+    # OUTPUT TOPIC
+    # ---------------------------------------------------------
+    publish_stamped_twist: false
+    cmd_vel_topic: "cmd_vel"

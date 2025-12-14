@@ -1,0 +1,71 @@
+# ============================================
+# RoboJeep Complete Configuration
+# ============================================
+
+# Joystick Configuration
+joy_node:
+  ros__parameters:
+    dev: /dev/input/js0
+    deadzone: 0.05
+    autorepeat_rate: 20.0
+
+# Teleop Configuration
+teleop_twist_joy:
+  ros__parameters:
+    require_enable_button: false
+
+    # RIGHT STICK
+    # Vertical (axis 3) = throttle (linear.x)
+    # Horizontal (axis 2) = tank steering (linear.y)
+    axis_linear:
+      x: 3        # throttle
+      y: 2        # tank turn
+
+    scale_linear:
+      x: -1.0     # invert vertical
+      y:  1.0
+
+    scale_linear_turbo:
+      x: -1.0
+      y:  1.0
+
+    # LEFT STICK
+    # Horizontal (axis 0) = Ackermann steering (angular.z)
+    axis_angular:
+      yaw: 0
+    scale_angular:
+      yaw: 1.0
+    scale_angular_turbo:
+      yaw: 1.0
+
+    enable_button: 5
+    enable_turbo_button: 4
+
+# Base Node Configuration (Dual Steering)
+robojeep_base_differential:
+  ros__parameters:
+    max_speed_scale: 1.0
+    track_width: 0.6223
+    tank_turn_sensitivity: 0.5
+    max_steering_angle: 0.6  # ~34 degrees max for Ackermann
+
+# Arduino Bridge Configuration (Motor Control + Encoders)
+arduino_bridge_calibrated:
+  ros__parameters:
+    # Serial ports
+    front_mega_port: /dev/ttyACM1
+    rear_mega_port: /dev/ttyACM2
+    baudrate: 115200
+    
+    # Calibration scales
+    front_left_scale: 1.0
+    front_right_scale: 1.0
+    rear_left_scale: 1.0
+    rear_right_scale: 1.0
+    
+    # Encoder configuration (optional)
+    front_micro_port: /dev/ttyACM3   # Right front encoder
+    rear_micro_port: ""              # Right rear encoder (not connected yet)
+    
+    # Encoder publishing rate
+    encoder_publish_rate: 10.0  # Hz

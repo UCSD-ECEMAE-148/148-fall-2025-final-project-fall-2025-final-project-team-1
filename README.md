@@ -278,7 +278,7 @@ ros2 topic echo /wheel_feedback         # Encoder feedback (not implemented but 
 
 ## Contacts
 
-* Bastian Müllner - bastian.muellner@tum.de | [LinkedIn](https://www.linkedin.com/in/winston-wei-han-chou-a02214249/)
-* Anderson Compalas - 
-* Jobanpreet Mutti - 
+* Bastian Müllner - bastian.muellner@tum.de | [LinkedIn](https://www.linkedin.com/in/bastian-m%C3%BCllner-115557313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+* Anderson Compalas - acompalas@ucsd.edu | ajcompalas@gmail.com
+* Jobanpreet Mutti - Jmutti@ucsd.edu | Jobansmutti@gmail.com
 * Saul Armenta -

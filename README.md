@@ -14,22 +14,20 @@
     <li><a href="#what-we-promised">What We Promised</a></li>
     <li><a href="#accomplishments">Accomplishments</a></li>
     <li><a href="#challenges">Challenges</a></li>
-    <li><a href="#final-project-videos">Final Project Videos</a></li>
     <li><a href="#hardware">Hardware</a></li>
       <ul>
             <li><a href="#electronics">Electronics</a></li>
             <li><a href="#wiring">Wiring</a></li>
+            <li><a href="#car hardware">Car Hardware</a></li>
         </ul>
-    <li><a href="#software">Software</a></li>
+   <li><a href="#software">Software</a></li>
         <ul>
             <li><a href="#slam-simultaneous-localization-and-mapping">SLAM (Simultaneous Localization and Mapping)</a></li>
             <li><a href="#obstacle-avoidance">Obstacle Avoidance</a></li>
         </ul>
-    <li><a href="#gantt-chart">Gantt Chart</a></li>
-    <li><a href="#course-deliverables">Course Deliverables</a></li>
-    <li><a href="#project-reproduction">Project Reproduction</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
     <li><a href="#Ideas for future Teams">Ideas for future Teams</a></li>
+    <li><a href="#pictures">Pictures</a></li>
+    <li><a href="#final-project-videos">Final Project Videos</a></li>
   </ol>
 
 <hr>
@@ -96,7 +94,7 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 * REV-11-1271 Absolute encoder: Reading the steering angle
 * Radio control:
   * Radiomaster reciever: recieving commands from remote control
-  * Arduino micro pro: Converting it to a usb joystick for the jetson to read
+  * Arduino micro pro: Converting it to a usb joystick for the jetson to read with [this](https://github.com/Triton-AI/ELRSController) software
   * Relay board: When triggert it stops 5V enable signal to ALL H-Bridges, so nothing will move if this 5v signal is not switched.
 
  ### Wiring

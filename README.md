@@ -123,6 +123,9 @@ In case this car should be used to transport a large payload, removing the seats
 
 <hr>
 
+## Final Project Videos
+https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3jxdj2R4j
+
 ## Operational Guide
 
 ### Quick Start
@@ -131,6 +134,11 @@ In case this car should be used to transport a large payload, removing the seats
 
 ```bash
 ssh -Y jetson@ucsdrobojeep-148-01.local
+```
+
+Password
+```bash
+wer#1!
 ```
 
 #### 2. Start Docker Container
@@ -189,6 +197,27 @@ robojeep_ws/
 - Launch files that start all nodes together
 - Configuration file (`config/robojeep.yaml`)
 
+### Debugging with ROS2 Topics
 
-## Final Project Videos
-https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3jxdj2R4j
+To debug the system, you can monitor various topics to see the data flow. First, make sure to source the workspace:
+```bash
+source /opt/ros/foxy/setup.bash
+source /home/projects/robojeep_ws/install/setup.bash
+```
+
+Then use `ros2 topic echo <topic>` to view real-time data:
+
+**Joystick and Control Topics:**
+```bash
+ros2 topic echo /joy                    # Raw joystick input
+ros2 topic echo /cmd_vel                # Velocity commands from teleop
+ros2 topic echo /steering_cmd           # Steering angle commands
+ros2 topic echo /wheel_cmd              # Wheel velocity commands
+```
+
+**Debugging Topics:**
+```bash
+ros2 topic echo /serial_status          # Formatted serial commands being sent
+ros2 topic echo /wheel_feedback         # Encoder feedback (if configured)
+```
+

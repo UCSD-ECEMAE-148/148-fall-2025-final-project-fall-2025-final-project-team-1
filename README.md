@@ -130,6 +130,13 @@ https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3
 
 ### Quick Start
 
+#### 0. Pull Docker image
+```bash
+docker pull djnighti/ucsd_robocar:devel
+```
+
+https://hub.docker.com/r/djnighti/ucsd_robocar
+
 #### 1. SSH into Jetson
 
 ```bash

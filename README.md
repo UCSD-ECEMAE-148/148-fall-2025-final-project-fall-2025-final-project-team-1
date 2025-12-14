@@ -18,14 +18,14 @@
       <ul>
             <li><a href="#electronics">Electronics</a></li>
             <li><a href="#wiring">Wiring</a></li>
-            <li><a href="#car hardware">Car Hardware</a></li>
+            <li><a href="#car-hardware">Car Hardware</a></li>
         </ul>
    <li><a href="#software">Software</a></li>
         <ul>
             <li><a href="#slam-simultaneous-localization-and-mapping">SLAM (Simultaneous Localization and Mapping)</a></li>
             <li><a href="#obstacle-avoidance">Obstacle Avoidance</a></li>
         </ul>
-    <li><a href="#Ideas for future Teams">Ideas for future Teams</a></li>
+    <li><a href="#ideas-for-future-teams">Ideas for future Teams</a></li>
     <li><a href="#pictures">Pictures</a></li>
     <li><a href="#final-project-videos">Final Project Videos</a></li>
     <li><a href="#operational-guide">Operational Guide</a></li>
@@ -114,19 +114,10 @@ We also improved the steering play by printing a spacer to take up the void crea
 </div>
 
 
-In case this car should be used to transport a large payload, removing the seats will provide a large cavity for that.
-
-## Ideas for future Teams
-* Add a Battery sensor: The battery shouldnt drop below 22.5V and currently there is nothing warning you or stopping the car
-* Artificial differential: Compute the wheel angle and use that to compute how much faster the outer wheels in a turn need to spin
-* Wire all the existing car dash and steering wheel switches to the front arduino to make them usable in your code
-
-<hr>
 
 ## Final Project Videos
 https://youtube.com/playlist?list=PLUkwIOCThVas6LDGFrjdmkLAr4umysZr8&si=oDBQTWC3jxdj2R4j
-
-## Operational Guide
+<hr>
 
 ### Quick Start
 
@@ -250,3 +241,10 @@ ros2 topic echo /serial_status          # Formatted serial commands being sent
 ros2 topic echo /wheel_feedback         # Encoder feedback (not implemented but structure is there)
 ```
 
+## Ideas for future Teams
+* Add a Battery sensor: The battery shouldnt drop below 22.5V and currently there is nothing warning you or stopping the car
+* Artificial differential: Compute the wheel angle and use that to compute how much faster the outer wheels in a turn need to spin
+* Wire all the existing car dash and steering wheel switches to the front arduino to make them usable in your code
+* In case this car should be used to transport a large payload, removing the seats will provide a large cavity for that.
+
+<hr>

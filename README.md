@@ -93,6 +93,7 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 * 2 Arduino micro pro: Reading the other two wheel encoders. Since the used encoders dont support changing their i2c adress, we can only put one per i2c bus, so one per arduino
 * 5 H-Bridges: Controlling the brushed motors (https://www.amazon.com/MTDELE-H-Bridge-semiconductor-Refrigeration-Controller/dp/B0D732VYGZ/ref=sims_dp_d_dex_popular_subs_t3_v6_d_sccl_1_4/136-0486074-4523801?psc=1)
 * 4 AS5600 Hall effect encoders: Reading the wheel motor rpm
+* REV-11-1271 Absolute encoder: Reading the steering angle
 * Radio control:
   * Radiomaster reciever: recieving commands from remote control
   * Arduino micro pro: Converting it to a usb joystick for the jetson to read
@@ -108,6 +109,6 @@ The projects goal is to make a kids toy car controllabe via Ros2, to provide a b
 ## Ideas for future Teams
 * Add a Battery sensor: The battery shouldnt drop below 22.5V and currently there is nothing warning you or stopping the car
 * Artificial differential: Compute the wheel angle and use that to compute how much faster the outer wheels in a turn need to spin
-* Wire all the existing car switches to the front arduino to make them usable in your code
+* Wire all the existing car dash and steering wheel switches to the front arduino to make them usable in your code
 
 <hr>
